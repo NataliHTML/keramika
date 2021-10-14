@@ -4,4 +4,149 @@
 @import "libs";
 @import "global";
 
+.header {
+	background-color: #fff;
+	&__top {
+		border-bottom: 1px solid #000000;
+		margin: 0 30px;
+	}
+	&__inner {
+		display: flex;
+		justify-content: space-between;
+		height: 60px;
+		align-items: center;
+	}
+	&__box {
+		position: relative;
+		&::after {
+			content: "";
+			position: absolute;
+			background-image: url("../images/keramika.png");
+			background-repeat: no-repeat;
+			background-size: auto;
+			top: -23px;
+			left: -520px;
+			width: 90px;
+			height: 90px;
+		}
+	}
+	&__login {
+		color: #111111;
+	}
+	&__register {
+		color: #111111;
+		padding-left: 33px;
+	}
+	&__content-inner {
+		display: flex;
+		justify-content: space-between;
+		height: 120px;
+		align-items: center;
+	}
+}
+.logo {
+	position: relative;
+	&::before {
+		position: absolute;
+		background-color: #000000;
+		content: "";
+		width: 1px;
+		height: 30px;
+		top: 8px;
+		right: -70px;
+	}
+}
+.menu {
+	&__list {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	&__list-item + .menu__list-item {
+		padding-left: 16px;
+	}
+	&__list-link {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		color: #111111;
+		transition: all 0.3s;
+		&:hover {
+			color: #fff;
+			height: 80px;
+			width: 80px;
+			border-radius: 50%;
+			background-color: #3F3F3F;
+		}
+	}
+	&__list-link--active {
+		color: #fff;
+		height: 80px;
+		width: 80px;
+		border-radius: 50%;
+		background-color: #3F3F3F;
+	}
+}
+
+.search__inner-form {
+	max-width: 320px;
+	margin: 0 auto;
+	position: relative;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+	width: 100%;
+	input {
+		display: block;
+		height: 30px;
+		border: none;
+		&::placeholder {
+			color: rgba(0, 0, 0, 0.25);
+		}
+	}
+	button {
+		position: absolute;
+		border: none;
+		background-color: transparent;
+		right: 0px;
+		top: 5px;
+		padding: 0;
+	}
+}
+.header__content-box {
+	display: flex;
+	justify-content: space-between;
+}
+.header__info {
+	max-width: 220px;
+	position: relative;
+	padding-left: 60px;
+	margin-right: 60px;
+	span {
+		display: block;
+		font-size: 12px;
+		line-height: 11px;
+		padding-top: 8px;
+	}
+	&::after {
+		position: absolute;
+		content: "";
+		height: 43px;
+		width: 43px;
+		border-radius: 50%;
+		border: 1px solid #3F3F3F;
+		text-align: center;
+		left: 0;
+		top: 0;
+		background-position: center center;
+		background-image: url("../images/icon/phone.svg");
+		background-repeat: no-repeat;
+		background-size: auto;
+	}
+}
+.header__phone {
+	font-size: 15px;
+	color: #111111;
+}
+.header__circle-items {
+	max-width: 120px;
+}
 @import "media";

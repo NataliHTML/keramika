@@ -5,13 +5,84 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title></title>
+	<title>МиоКерамика</title>
 	<link rel="stylesheet" href="css/style.min.css">
 </head>
 
 
 <body>
-
+	<header class="header">
+		<div class="header__top">
+			<div class="container">
+				<div class="header__inner">
+					<a class="logo" href="#">
+						<img class="logo__img" src="images/logo.svg" alt="logo">
+					</a>
+					<div class="header__box">
+						<a class="header__login" href="#">
+							Вход
+						</a>
+						<a class="header__register" href="#">Регистрация</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="header__content">
+			<div class="container">
+				<div class="header__content-inner">
+					<nav class="menu">
+						<ul class="menu__list">
+							<li class="menu__list-item">
+								<a class="menu__list-link menu__list-link--active" href="#">Каталог</a>
+							</li>
+							<li class="menu__list-item">
+								<a class="menu__list-link" href="#">Доставка</a>
+							</li>
+							<li class="menu__list-item">
+								<a class="menu__list-link" href="#">Гарантия</a>
+							</li>
+							<li class="menu__list-item">
+								<a class="menu__list-link" href="#">Контакты</a>
+							</li>
+						</ul>
+					</nav>
+					<div class="search__inner-form">
+						<form>
+							<input type="text" placeholder="Поиск по сайту..." required>
+							<button type="submit">
+								<img src="images/icon/search.svg" alt="">
+							</button>
+						</form>
+					</div>
+					<div class="header__content-box">
+						<div class="header__info">
+							<a class="header__phone" href="tel:88314205010">
+								8 (831) 420 - 50 - 10</a>
+							<span>заказать звонок</span>
+						</div>
+						<div class="header__circle-items">
+							<div class="basket__box">
+								<a class="basket header__circle active icon-shopping-cart" href="#"><span>1</span></a>
+								<div class="circle__menu">
+									<div class="circle__item">
+										<img class="circle__images" src="images/content/basket.png" alt="">
+									</div>
+								</div>
+							</div>
+							<div class="heart__box">
+								<a class="heart header__circle active icon-shopping-cart" href="#"><span>1</span></a>
+								<div class="circle__menu">
+									<div class="circle__item">
+										<img class="circle__images" src="images/content/heart.png" alt="">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
 
 	<script src="js/main.min.js"></script>
 </body>
