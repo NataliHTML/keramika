@@ -6,335 +6,715 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>МиоКерамика</title>
-	<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&family=Roboto:wght@300,400&display=swap"
+		rel="stylesheet">
 	<link rel="stylesheet" href="css/style.min.css">
 </head>
 
 
 <body>
-	<header class="header">
-		<div class="header__top">
-			<div class="container">
-				<div class="header__inner">
-					<a class="logo" href="#">
-						<img class="logo__img" src="images/logo.svg" alt="logo">
-					</a>
-					<div class="header__box">
-						<a class="header__login" href="#">
-							Вход
+	<main class="main">
+		<header class="header">
+			<div class="header__top">
+				<div class="container">
+					<div class="header__inner">
+						<a class="logo" href="#">
+							<img class="logo__img" src="images/logo.svg" alt="logo">
 						</a>
-						<a class="header__register" href="#">Регистрация</a>
+						<div class="header__box">
+							<a class="header__login" href="#">
+								Вход
+							</a>
+							<a class="header__register" href="#">Регистрация</a>
+						</div>
 					</div>
 				</div>
 			</div>
-		</div>
-		<div class="header__content">
+			<div class="header__content">
+				<div class="container">
+					<div class="header__content-inner">
+						<nav class="menu">
+							<ul class="menu__list">
+								<li class="menu__list-item">
+									<a class="menu__list-link menu__list-link--active" href="#">Каталог</a>
+								</li>
+								<li class="menu__list-item">
+									<a class="menu__list-link" href="#">Доставка</a>
+								</li>
+								<li class="menu__list-item">
+									<a class="menu__list-link" href="#">Гарантия</a>
+								</li>
+								<li class="menu__list-item">
+									<a class="menu__list-link" href="#">Контакты</a>
+								</li>
+							</ul>
+						</nav>
+						<div class="search__inner-form">
+							<form>
+								<input type="text" placeholder="Поиск по сайту..." required>
+								<button type="submit">
+									<img src="images/icon/search.svg" alt="">
+								</button>
+							</form>
+						</div>
+						<div class="header__content-box">
+							<div class="header__info">
+								<a class="header__phone" href="tel:88314205010">
+									8 (831) 420 - 50 - 10</a>
+								<span>заказать звонок</span>
+							</div>
+							<div class="header__circle-items">
+								<div class="basket__box">
+									<a class="basket-white header__circle" href="#"><span>1</span></a>
+								</div>
+								<div class="heart__box">
+									<a class="heart header__circle" href="#"><span>1</span></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<div class="breadcrumbs">
 			<div class="container">
-				<div class="header__content-inner">
-					<nav class="menu">
-						<ul class="menu__list">
-							<li class="menu__list-item">
-								<a class="menu__list-link menu__list-link--active" href="#">Каталог</a>
-							</li>
-							<li class="menu__list-item">
-								<a class="menu__list-link" href="#">Доставка</a>
-							</li>
-							<li class="menu__list-item">
-								<a class="menu__list-link" href="#">Гарантия</a>
-							</li>
-							<li class="menu__list-item">
-								<a class="menu__list-link" href="#">Контакты</a>
-							</li>
-						</ul>
-					</nav>
-					<div class="search__inner-form">
-						<form>
-							<input type="text" placeholder="Поиск по сайту..." required>
-							<button type="submit">
-								<img src="images/icon/search.svg" alt="">
-							</button>
-						</form>
-					</div>
-					<div class="header__content-box">
-						<div class="header__info">
-							<a class="header__phone" href="tel:88314205010">
-								8 (831) 420 - 50 - 10</a>
-							<span>заказать звонок</span>
-						</div>
-						<div class="header__circle-items">
-							<div class="basket__box">
-								<a class="basket header__circle" href="#"><span>1</span></a>
-							</div>
-							<div class="heart__box">
-								<a class="heart header__circle" href="#"><span>1</span></a>
-							</div>
-						</div>
-					</div>
+				<div class="breadcrumbs__inner">
+					<ul class="breadcrumbs__list">
+						<li><a href="#">Главная</a></li>
+						<li><a href="#">Каталог</a></li>
+						<li><a href="#">Керамогранит</a></li>
+					</ul>
 				</div>
 			</div>
 		</div>
-	</header>
-	<div class="breadcrumbs">
-		<div class="container">
-			<div class="breadcrumbs__inner">
-				<ul class="breadcrumbs__list">
-					<li><a href="#">Главная</a></li>
-					<li><a href="#">Каталог</a></li>
-					<li><a href="#">Керамогранит</a></li>
-				</ul>
-			</div>
-		</div>
-	</div>
-	<section class="shop">
-		<div class="container">
-			<div class="shop__inner">
-				<div class="shop__filters">
-					<div class="shop__filter-selects">
-						<form class="filter__form" action="#">
-							<input class="filter__input" type="checkbox" name="appointment" id="appointment" checked>
-							<label class="filter__menu" for="appointment"><span>Назначение</span><span
-									class="filter-appointment__checkbox"></span></label>
-							<label class="filter__label">
-								<span class="filter__text">Плитка для кухни</span>
-								<div class="filter__box">
-									<input class="filter__input" type="radio" name="appointment" checked>
-									<span class="filter__checkbox"></span>
-								</div>
-							</label>
-							<label class="filter__label">
-								<span class="filter__text">Плитка для ванной</span>
-								<div class="filter__box">
-									<input class="filter__input" type="radio" name="appointment">
-									<span class="filter__checkbox"></span>
-								</div>
-							</label>
-							<label class="filter__label">
-								<span class="filter__text">Керамогранит</span>
-								<div class="filter__box">
-									<input class="filter__input" type="radio" name="appointment">
-									<span class="filter__checkbox"></span>
-								</div>
-							</label>
-							<label class="filter__label">
-								<span class="filter__text">Напольная плитка</span>
-								<div class="filter__box">
-									<input class="filter__input" type="radio" name="appointment">
-									<span class="filter__checkbox"></span>
-								</div>
-							</label>
-						</form>
-
-						<form class="filter__form" action="#">
-							<input class="filter__input" type="checkbox" name="brand" id="brand">
-							<label class="filter__menu" for="brand"><span>Производитель (бренд)</span><span
-									class="filter-appointment__checkbox"></span></label>
-							<label class="filter__label">
-								<span class="filter__text">Плитка для кухни</span>
-								<div class="filter__box">
-									<input class="filter__input" type="radio" name="brand">
-									<span class="filter__checkbox"></span>
-								</div>
-							</label>
-							<label class="filter__label">
-								<span class="filter__text">Плитка для ванной</span>
-								<div class="filter__box">
-									<input class="filter__input" type="radio" name="brand">
-									<span class="filter__checkbox"></span>
-								</div>
-							</label>
-							<label class="filter__label">
-								<span class="filter__text">Керамогранит</span>
-								<div class="filter__box">
-									<input class="filter__input" type="radio" name="brand">
-									<span class="filter__checkbox"></span>
-								</div>
-							</label>
-							<label class="filter__label">
-								<span class="filter__text">Напольная плитка</span>
-								<div class="filter__box">
-									<input class="filter__input" type="radio" name="brand">
-									<span class="filter__checkbox"></span>
-								</div>
-							</label>
-						</form>
-						<form class="filter__form" action="#">
-							<input class="filter__input" type="checkbox" name="collection" id="collection">
-							<label class="filter__menu" for="collection"><span>Коллекция</span><span
-									class="filter-appointment__checkbox"></span></label>
-							<label class="filter__label">
-								<span class="filter__text">Плитка для кухни</span>
-								<div class="filter__box">
-									<input class="filter__input" type="radio" name="collection">
-									<span class="filter__checkbox"></span>
-								</div>
-							</label>
-							<label class="filter__label">
-								<span class="filter__text">Плитка для ванной</span>
-								<div class="filter__box">
-									<input class="filter__input" type="radio" name="collection">
-									<span class="filter__checkbox"></span>
-								</div>
-							</label>
-							<label class="filter__label">
-								<span class="filter__text">Керамогранит</span>
-								<div class="filter__box">
-									<input class="filter__input" type="radio" name="collection">
-									<span class="filter__checkbox"></span>
-								</div>
-							</label>
-							<label class="filter__label">
-								<span class="filter__text">Напольная плитка</span>
-								<div class="filter__box">
-									<input class="filter__input" type="radio" name="collection">
-									<span class="filter__checkbox"></span>
-								</div>
-							</label>
-						</form>
-						<form class="filter__form" action="#">
-							<input class="filter__input" type="checkbox" name="country" id="country">
-							<label class="filter__menu" for="country"><span>Страна</span><span
-									class="filter-appointment__checkbox"></span></label>
-							<label class="filter__label">
-								<span class="filter__text">Плитка для кухни</span>
-								<div class="filter__box">
-									<input class="filter__input" type="radio" name="country">
-									<span class="filter__checkbox"></span>
-								</div>
-							</label>
-							<label class="filter__label">
-								<span class="filter__text">Плитка для ванной</span>
-								<div class="filter__box">
-									<input class="filter__input" type="radio" name="country">
-									<span class="filter__checkbox"></span>
-								</div>
-							</label>
-							<label class="filter__label">
-								<span class="filter__text">Керамогранит</span>
-								<div class="filter__box">
-									<input class="filter__input" type="radio" name="country">
-									<span class="filter__checkbox"></span>
-								</div>
-							</label>
-							<label class="filter__label">
-								<span class="filter__text">Напольная плитка</span>
-								<div class="filter__box">
-									<input class="filter__input" type="radio" name="country">
-									<span class="filter__checkbox"></span>
-								</div>
-							</label>
-						</form>
-						<div class="filter-btn">
-							<form class="filter-btn__form" action="#">
-								<span class="filter__menu">Фильтр</span>
-								<label class="filter__button">
-									<img src="images/icon/reset.svg" alt="search images">
-									<button class="filter-btn__btn" type="reset">
-										сброс
-									</button>
+		<section class="shop">
+			<div class="container">
+				<div class="shop__inner">
+					<div class="shop__filters">
+						<div class="shop__filter-selects">
+							<form class="filter__form" action="#">
+								<input class="filter__input" type="checkbox" name="appointment" id="appointment" checked>
+								<label class="filter__menu" for="appointment"><span>Назначение</span><span
+										class="filter-appointment__checkbox"></span></label>
+								<label class="filter__label">
+									<span class="filter__text">Плитка для кухни</span>
+									<div class="filter__box">
+										<input class="filter__input" type="radio" name="appointment" checked>
+										<span class="filter__checkbox"></span>
+									</div>
+								</label>
+								<label class="filter__label">
+									<span class="filter__text">Плитка для ванной</span>
+									<div class="filter__box">
+										<input class="filter__input" type="radio" name="appointment">
+										<span class="filter__checkbox"></span>
+									</div>
+								</label>
+								<label class="filter__label">
+									<span class="filter__text">Керамогранит</span>
+									<div class="filter__box">
+										<input class="filter__input" type="radio" name="appointment">
+										<span class="filter__checkbox"></span>
+									</div>
+								</label>
+								<label class="filter__label">
+									<span class="filter__text">Напольная плитка</span>
+									<div class="filter__box">
+										<input class="filter__input" type="radio" name="appointment">
+										<span class="filter__checkbox"></span>
+									</div>
 								</label>
 							</form>
-							<div class="filter-choice">
-								<ul class="filter-choice__list">
-									<li class="filter-choice__item">
-										<div class="filter-choice__title">
-											Выбрано: 6
-										</div>
-									</li>
-									<li class="filter-choice__item">
-										<a class="filter-choice__btn" href="#">Показать</a>
-									</li>
+
+							<form class="filter__form" action="#">
+								<input class="filter__input" type="checkbox" name="brand" id="brand">
+								<label class="filter__menu" for="brand"><span>Производитель (бренд)</span><span
+										class="filter-appointment__checkbox"></span></label>
+								<label class="filter__label">
+									<span class="filter__text">Плитка для кухни</span>
+									<div class="filter__box">
+										<input class="filter__input" type="radio" name="brand">
+										<span class="filter__checkbox"></span>
+									</div>
+								</label>
+								<label class="filter__label">
+									<span class="filter__text">Плитка для ванной</span>
+									<div class="filter__box">
+										<input class="filter__input" type="radio" name="brand">
+										<span class="filter__checkbox"></span>
+									</div>
+								</label>
+								<label class="filter__label">
+									<span class="filter__text">Керамогранит</span>
+									<div class="filter__box">
+										<input class="filter__input" type="radio" name="brand">
+										<span class="filter__checkbox"></span>
+									</div>
+								</label>
+								<label class="filter__label">
+									<span class="filter__text">Напольная плитка</span>
+									<div class="filter__box">
+										<input class="filter__input" type="radio" name="brand">
+										<span class="filter__checkbox"></span>
+									</div>
+								</label>
+							</form>
+							<form class="filter__form" action="#">
+								<input class="filter__input" type="checkbox" name="collection" id="collection">
+								<label class="filter__menu" for="collection"><span>Коллекция</span><span
+										class="filter-appointment__checkbox"></span></label>
+								<label class="filter__label">
+									<span class="filter__text">Плитка для кухни</span>
+									<div class="filter__box">
+										<input class="filter__input" type="radio" name="collection">
+										<span class="filter__checkbox"></span>
+									</div>
+								</label>
+								<label class="filter__label">
+									<span class="filter__text">Плитка для ванной</span>
+									<div class="filter__box">
+										<input class="filter__input" type="radio" name="collection">
+										<span class="filter__checkbox"></span>
+									</div>
+								</label>
+								<label class="filter__label">
+									<span class="filter__text">Керамогранит</span>
+									<div class="filter__box">
+										<input class="filter__input" type="radio" name="collection">
+										<span class="filter__checkbox"></span>
+									</div>
+								</label>
+								<label class="filter__label">
+									<span class="filter__text">Напольная плитка</span>
+									<div class="filter__box">
+										<input class="filter__input" type="radio" name="collection">
+										<span class="filter__checkbox"></span>
+									</div>
+								</label>
+							</form>
+							<form class="filter__form" action="#">
+								<input class="filter__input" type="checkbox" name="country" id="country">
+								<label class="filter__menu" for="country"><span>Страна</span><span
+										class="filter-appointment__checkbox"></span></label>
+								<label class="filter__label">
+									<span class="filter__text">Плитка для кухни</span>
+									<div class="filter__box">
+										<input class="filter__input" type="radio" name="country">
+										<span class="filter__checkbox"></span>
+									</div>
+								</label>
+								<label class="filter__label">
+									<span class="filter__text">Плитка для ванной</span>
+									<div class="filter__box">
+										<input class="filter__input" type="radio" name="country">
+										<span class="filter__checkbox"></span>
+									</div>
+								</label>
+								<label class="filter__label">
+									<span class="filter__text">Керамогранит</span>
+									<div class="filter__box">
+										<input class="filter__input" type="radio" name="country">
+										<span class="filter__checkbox"></span>
+									</div>
+								</label>
+								<label class="filter__label">
+									<span class="filter__text">Напольная плитка</span>
+									<div class="filter__box">
+										<input class="filter__input" type="radio" name="country">
+										<span class="filter__checkbox"></span>
+									</div>
+								</label>
+							</form>
+							<div class="filter-btn">
+								<form class="filter-btn__form" action="#">
+									<span class="filter__menu">Фильтр</span>
+									<label class="filter__button">
+										<img src="images/icon/reset.svg" alt="search images">
+										<button class="filter-btn__btn" type="reset">
+											сброс
+										</button>
+									</label>
+								</form>
+								<div class="filter-choice">
+									<ul class="filter-choice__list">
+										<li class="filter-choice__item">
+											<div class="filter-choice__title">
+												Выбрано: 6
+											</div>
+										</li>
+										<li class="filter-choice__item">
+											<a class="filter-choice__btn" href="#">Показать</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="shop-content">
+						<h1 class="shop-content__title">
+							Керамогранит
+						</h1>
+						<h3 class="shop-content__subtitle">
+							Коллекции
+						</h3>
+						<div class="shop-content__inner">
+							<div class="shop-product shop-product--agata">
+								<div class="shop-product__img-box">
+									<span></span>
+									<img class="shop-product__images" src="images/product/product1.jpg" alt="product">
+								</div>
+							</div>
+							<div class="shop-product shop-product--biarritz">
+								<div class="shop-product__img-box">
+									<span></span>
+									<img class="shop-product__images" src="images/product/product2.jpg" alt="product">
+								</div>
+							</div>
+							<div class="shop-product shop-product--bloom">
+								<div class="shop-product__img-box">
+									<span></span>
+									<img class="shop-product__images" src="images/product/product3.jpg" alt="product">
+								</div>
+							</div>
+							<div class="shop-product shop-product--biarritz">
+								<div class="shop-product__img-box">
+									<span></span>
+									<img class="shop-product__images" src="images/product/product2.jpg" alt="product">
+								</div>
+							</div>
+							<div class="shop-product shop-product--bloom">
+								<div class="shop-product__img-box">
+									<span></span>
+									<img class="shop-product__images" src="images/product/product3.jpg" alt="product">
+								</div>
+							</div>
+							<div class="shop-product shop-product--agata">
+								<div class="shop-product__img-box">
+									<span></span>
+									<img class="shop-product__images" src="images/product/product1.jpg" alt="product">
+								</div>
+							</div>
+						</div>
+						<div class="shop-product__menu">
+							<ul class="product-list">
+								<li class="product-list__item">
+									<a class="product-list__link open-next" href="#">
+										Открыть следующие 6
+									</a>
+								</li>
+								<li class="product-list__item">
+									<a class="product-list__link open" href="#">
+										Открыть все
+									</a>
+								</li>
+								<li class="product-list__item">
+									<a class="product-list__link product-list__link--active close" href="#">
+										Закрыть
+									</a>
+								</li>
+							</ul>
+						</div>
+						<h3 class="shop-content__subtitle">Товары</h3>
+						<div class="shop-content__sort">
+							<div class="shop-content__sort-links">
+								<span>Сортировать:</span>
+								<ul class="shop-content__sort-list">
+									<li><a class="shop-content__sort-list--active" href="#">Популярное</a></li>
+									<li><a href="#">Цена</a></li>
+								</ul>
+							</div>
+							<div class="shop-content__sort-links">
+								<span>Выводить по:</span>
+								<ul class="shop-content__sort-list">
+									<li><a class="shop-content__sort-list--active" href="#">18</a></li>
+									<li><a href="#">36</a></li>
+									<li><a href="#">72</a></li>
 								</ul>
 							</div>
 						</div>
+						<div class="product__items">
+							<div class="product-item">
+								<div class="product-item__img-box">
+									<img class="product-item__images" src="images/product/1.jpg" alt="product">
+								</div>
+								<h4 class="product-item__title">
+									Керамогранит 20*20 Havana
+									Sugar Cane
+								</h4>
+								<div class="product__info">
+									<ul class="product-info__list">
+										<li class="product-info__item">
+											<div class="product-info__title">
+												Бренд:
+											</div>
+											<div class="product-info__text">
+												CIR
+											</div>
+										</li>
+										<li class="product-info__item">
+											<div class="product-info__title">
+												Коллекция:
+											</div>
+											<div class="product-info__text">
+												Havana
+											</div>
+										</li>
+										<li class="product-info__item">
+											<div class="product-info__title">
+												Страна:
+											</div>
+											<div class="product-info__text">
+												Италия
+											</div>
+										</li>
+									</ul>
+								</div>
+								<div class="products__item-content products__item-content--active">
+									<div class="products__item-price">
+										<div class="products__item-new" href="#">
+											4 490<span><sup>₽</sup></span>
+										</div>
+										<a class="products__item-old" href="#">
+											4 317 <span>₽/м<sup>2</sup></span>
+										</a>
+									</div>
+									<div class="products__item-images">
+										<svg class="ellipse" width="80" height="80" viewBox="0 0 80 80" fill="#888"
+											xmlns="http://www.w3.org/2000/svg">
+											<path d="M80 0C35.8172 0 0 35.8172 0 80H80V0Z" fill="#888888" />
+										</svg>
+										<svg class="basket" width="25" height="27" viewBox="0 0 25 27" fill="#888888"
+											xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M11.1152 10.2857C10.421 10.2857 9.85299 9.70714 9.85299 9V6.42857H7.32849C6.63425 6.42857 6.06624 5.85 6.06624 5.14286C6.06624 4.43571 6.63425 3.85714 7.32849 3.85714H9.85299V1.28571C9.85299 0.578571 10.421 0 11.1152 0C11.8095 0 12.3775 0.578571 12.3775 1.28571V3.85714H14.902C15.5962 3.85714 16.1642 4.43571 16.1642 5.14286C16.1642 5.85 15.5962 6.42857 14.902 6.42857H12.3775V9C12.3775 9.70714 11.8095 10.2857 11.1152 10.2857ZM17.4265 21.8571C18.815 21.8571 19.9384 23.0143 19.9384 24.4286C19.9384 25.8429 18.815 27 17.4265 27C16.038 27 14.902 25.8429 14.902 24.4286C14.902 23.0143 16.038 21.8571 17.4265 21.8571ZM4.80399 21.8571C6.19246 21.8571 7.31587 23.0143 7.31587 24.4286C7.31587 25.8429 6.19246 27 4.80399 27C3.41551 27 2.27949 25.8429 2.27949 24.4286C2.27949 23.0143 3.41551 21.8571 4.80399 21.8571ZM16.038 15.4286H6.63425C5.68756 15.4286 4.85448 14.9014 4.42531 14.1043L0.158905 6.22286C-0.181904 5.60571 0.0453014 4.82143 0.651182 4.47429C0.942671 4.31178 1.28543 4.2733 1.60467 4.36724C1.92391 4.46118 2.19372 4.67991 2.35522 4.97571L6.63425 12.8571H15.4953L20.5316 2.01857C20.6331 1.79911 20.7938 1.61362 20.995 1.48383C21.1962 1.35405 21.4295 1.28532 21.6677 1.28571H23.7377C24.432 1.28571 25 1.86429 25 2.57143C25 3.27857 24.432 3.85714 23.7377 3.85714H22.4755L17.9314 13.6157L19.6354 16.7529C20.5569 18.4757 19.3451 20.5714 17.4265 20.5714H3.54174C2.8475 20.5714 2.27949 19.9929 2.27949 19.2857C2.27949 18.5786 2.8475 18 3.54174 18H17.4265L16.038 15.4286Z"
+												fill="#888888" />
+										</svg>
+									</div>
+								</div>
+							</div>
+							<div class="product-item">
+								<div class="product-item__img-box">
+									<img class="product-item__images" src="images/product/2.jpg" alt="product">
+								</div>
+								<h4 class="product-item__title">
+									Керамогранит 20*20 Havana
+									Sugar Cane
+								</h4>
+								<div class="product__info">
+									<ul class="product-info__list">
+										<li class="product-info__item">
+											<div class="product-info__title">
+												Бренд:
+											</div>
+											<div class="product-info__text">
+												CIR
+											</div>
+										</li>
+										<li class="product-info__item">
+											<div class="product-info__title">
+												Коллекция:
+											</div>
+											<div class="product-info__text">
+												Havana
+											</div>
+										</li>
+										<li class="product-info__item">
+											<div class="product-info__title">
+												Страна:
+											</div>
+											<div class="product-info__text">
+												Италия
+											</div>
+										</li>
+									</ul>
+								</div>
+								<div class="products__item-content">
+									<div class="products__item-price">
+										<div class="products__item-new" href="#">
+											4 490<span><sup>₽</sup></span>
+										</div>
+										<a class="products__item-old" href="#">
+											4 317 <span>₽/м<sup>2</sup></span>
+										</a>
+									</div>
+									<div class="products__item-images">
+										<svg class="ellipse" width="80" height="80" viewBox="0 0 80 80" fill="#888"
+											xmlns="http://www.w3.org/2000/svg">
+											<path d="M80 0C35.8172 0 0 35.8172 0 80H80V0Z" fill="#888888" />
+										</svg>
+										<svg class="basket" width="25" height="27" viewBox="0 0 25 27" fill="#888888"
+											xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M11.1152 10.2857C10.421 10.2857 9.85299 9.70714 9.85299 9V6.42857H7.32849C6.63425 6.42857 6.06624 5.85 6.06624 5.14286C6.06624 4.43571 6.63425 3.85714 7.32849 3.85714H9.85299V1.28571C9.85299 0.578571 10.421 0 11.1152 0C11.8095 0 12.3775 0.578571 12.3775 1.28571V3.85714H14.902C15.5962 3.85714 16.1642 4.43571 16.1642 5.14286C16.1642 5.85 15.5962 6.42857 14.902 6.42857H12.3775V9C12.3775 9.70714 11.8095 10.2857 11.1152 10.2857ZM17.4265 21.8571C18.815 21.8571 19.9384 23.0143 19.9384 24.4286C19.9384 25.8429 18.815 27 17.4265 27C16.038 27 14.902 25.8429 14.902 24.4286C14.902 23.0143 16.038 21.8571 17.4265 21.8571ZM4.80399 21.8571C6.19246 21.8571 7.31587 23.0143 7.31587 24.4286C7.31587 25.8429 6.19246 27 4.80399 27C3.41551 27 2.27949 25.8429 2.27949 24.4286C2.27949 23.0143 3.41551 21.8571 4.80399 21.8571ZM16.038 15.4286H6.63425C5.68756 15.4286 4.85448 14.9014 4.42531 14.1043L0.158905 6.22286C-0.181904 5.60571 0.0453014 4.82143 0.651182 4.47429C0.942671 4.31178 1.28543 4.2733 1.60467 4.36724C1.92391 4.46118 2.19372 4.67991 2.35522 4.97571L6.63425 12.8571H15.4953L20.5316 2.01857C20.6331 1.79911 20.7938 1.61362 20.995 1.48383C21.1962 1.35405 21.4295 1.28532 21.6677 1.28571H23.7377C24.432 1.28571 25 1.86429 25 2.57143C25 3.27857 24.432 3.85714 23.7377 3.85714H22.4755L17.9314 13.6157L19.6354 16.7529C20.5569 18.4757 19.3451 20.5714 17.4265 20.5714H3.54174C2.8475 20.5714 2.27949 19.9929 2.27949 19.2857C2.27949 18.5786 2.8475 18 3.54174 18H17.4265L16.038 15.4286Z"
+												fill="#888888" />
+										</svg>
+									</div>
+								</div>
+							</div>
+							<div class="product-item">
+								<div class="product-item__img-box">
+									<img class="product-item__images" src="images/product/3.jpg" alt="product">
+								</div>
+								<h4 class="product-item__title">
+									Керамогранит 20*20 Havana
+									Sugar Cane
+								</h4>
+								<div class="product__info">
+									<ul class="product-info__list">
+										<li class="product-info__item">
+											<div class="product-info__title">
+												Бренд:
+											</div>
+											<div class="product-info__text">
+												CIR
+											</div>
+										</li>
+										<li class="product-info__item">
+											<div class="product-info__title">
+												Коллекция:
+											</div>
+											<div class="product-info__text">
+												Havana
+											</div>
+										</li>
+										<li class="product-info__item">
+											<div class="product-info__title">
+												Страна:
+											</div>
+											<div class="product-info__text">
+												Италия
+											</div>
+										</li>
+									</ul>
+								</div>
+								<div class="products__item-content">
+									<div class="products__item-price">
+										<div class="products__item-new" href="#">
+											4 490<span><sup>₽</sup></span>
+										</div>
+										<a class="products__item-old" href="#">
+											4 317 <span>₽/м<sup>2</sup></span>
+										</a>
+									</div>
+									<div class="products__item-images">
+										<svg class="ellipse" width="80" height="80" viewBox="0 0 80 80" fill="#888"
+											xmlns="http://www.w3.org/2000/svg">
+											<path d="M80 0C35.8172 0 0 35.8172 0 80H80V0Z" fill="#888888" />
+										</svg>
+										<svg class="basket" width="25" height="27" viewBox="0 0 25 27" fill="#888888"
+											xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M11.1152 10.2857C10.421 10.2857 9.85299 9.70714 9.85299 9V6.42857H7.32849C6.63425 6.42857 6.06624 5.85 6.06624 5.14286C6.06624 4.43571 6.63425 3.85714 7.32849 3.85714H9.85299V1.28571C9.85299 0.578571 10.421 0 11.1152 0C11.8095 0 12.3775 0.578571 12.3775 1.28571V3.85714H14.902C15.5962 3.85714 16.1642 4.43571 16.1642 5.14286C16.1642 5.85 15.5962 6.42857 14.902 6.42857H12.3775V9C12.3775 9.70714 11.8095 10.2857 11.1152 10.2857ZM17.4265 21.8571C18.815 21.8571 19.9384 23.0143 19.9384 24.4286C19.9384 25.8429 18.815 27 17.4265 27C16.038 27 14.902 25.8429 14.902 24.4286C14.902 23.0143 16.038 21.8571 17.4265 21.8571ZM4.80399 21.8571C6.19246 21.8571 7.31587 23.0143 7.31587 24.4286C7.31587 25.8429 6.19246 27 4.80399 27C3.41551 27 2.27949 25.8429 2.27949 24.4286C2.27949 23.0143 3.41551 21.8571 4.80399 21.8571ZM16.038 15.4286H6.63425C5.68756 15.4286 4.85448 14.9014 4.42531 14.1043L0.158905 6.22286C-0.181904 5.60571 0.0453014 4.82143 0.651182 4.47429C0.942671 4.31178 1.28543 4.2733 1.60467 4.36724C1.92391 4.46118 2.19372 4.67991 2.35522 4.97571L6.63425 12.8571H15.4953L20.5316 2.01857C20.6331 1.79911 20.7938 1.61362 20.995 1.48383C21.1962 1.35405 21.4295 1.28532 21.6677 1.28571H23.7377C24.432 1.28571 25 1.86429 25 2.57143C25 3.27857 24.432 3.85714 23.7377 3.85714H22.4755L17.9314 13.6157L19.6354 16.7529C20.5569 18.4757 19.3451 20.5714 17.4265 20.5714H3.54174C2.8475 20.5714 2.27949 19.9929 2.27949 19.2857C2.27949 18.5786 2.8475 18 3.54174 18H17.4265L16.038 15.4286Z"
+												fill="#888888" />
+										</svg>
+									</div>
+								</div>
+							</div>
+							<div class="product-item">
+								<div class="product-item__img-box">
+									<img class="product-item__images" src="images/product/3.jpg" alt="product">
+								</div>
+								<h4 class="product-item__title">
+									Керамогранит 20*20 Havana
+									Sugar Cane
+								</h4>
+								<div class="product__info">
+									<ul class="product-info__list">
+										<li class="product-info__item">
+											<div class="product-info__title">
+												Бренд:
+											</div>
+											<div class="product-info__text">
+												CIR
+											</div>
+										</li>
+										<li class="product-info__item">
+											<div class="product-info__title">
+												Коллекция:
+											</div>
+											<div class="product-info__text">
+												Havana
+											</div>
+										</li>
+										<li class="product-info__item">
+											<div class="product-info__title">
+												Страна:
+											</div>
+											<div class="product-info__text">
+												Италия
+											</div>
+										</li>
+									</ul>
+								</div>
+								<div class="products__item-content">
+									<div class="products__item-price">
+										<div class="products__item-new" href="#">
+											4 490<span><sup>₽</sup></span>
+										</div>
+										<a class="products__item-old" href="#">
+											4 317 <span>₽/м<sup>2</sup></span>
+										</a>
+									</div>
+									<div class="products__item-images">
+										<svg class="ellipse" width="80" height="80" viewBox="0 0 80 80" fill="#888"
+											xmlns="http://www.w3.org/2000/svg">
+											<path d="M80 0C35.8172 0 0 35.8172 0 80H80V0Z" fill="#888888" />
+										</svg>
+										<svg class="basket" width="25" height="27" viewBox="0 0 25 27" fill="#888888"
+											xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M11.1152 10.2857C10.421 10.2857 9.85299 9.70714 9.85299 9V6.42857H7.32849C6.63425 6.42857 6.06624 5.85 6.06624 5.14286C6.06624 4.43571 6.63425 3.85714 7.32849 3.85714H9.85299V1.28571C9.85299 0.578571 10.421 0 11.1152 0C11.8095 0 12.3775 0.578571 12.3775 1.28571V3.85714H14.902C15.5962 3.85714 16.1642 4.43571 16.1642 5.14286C16.1642 5.85 15.5962 6.42857 14.902 6.42857H12.3775V9C12.3775 9.70714 11.8095 10.2857 11.1152 10.2857ZM17.4265 21.8571C18.815 21.8571 19.9384 23.0143 19.9384 24.4286C19.9384 25.8429 18.815 27 17.4265 27C16.038 27 14.902 25.8429 14.902 24.4286C14.902 23.0143 16.038 21.8571 17.4265 21.8571ZM4.80399 21.8571C6.19246 21.8571 7.31587 23.0143 7.31587 24.4286C7.31587 25.8429 6.19246 27 4.80399 27C3.41551 27 2.27949 25.8429 2.27949 24.4286C2.27949 23.0143 3.41551 21.8571 4.80399 21.8571ZM16.038 15.4286H6.63425C5.68756 15.4286 4.85448 14.9014 4.42531 14.1043L0.158905 6.22286C-0.181904 5.60571 0.0453014 4.82143 0.651182 4.47429C0.942671 4.31178 1.28543 4.2733 1.60467 4.36724C1.92391 4.46118 2.19372 4.67991 2.35522 4.97571L6.63425 12.8571H15.4953L20.5316 2.01857C20.6331 1.79911 20.7938 1.61362 20.995 1.48383C21.1962 1.35405 21.4295 1.28532 21.6677 1.28571H23.7377C24.432 1.28571 25 1.86429 25 2.57143C25 3.27857 24.432 3.85714 23.7377 3.85714H22.4755L17.9314 13.6157L19.6354 16.7529C20.5569 18.4757 19.3451 20.5714 17.4265 20.5714H3.54174C2.8475 20.5714 2.27949 19.9929 2.27949 19.2857C2.27949 18.5786 2.8475 18 3.54174 18H17.4265L16.038 15.4286Z"
+												fill="#888888" />
+										</svg>
+									</div>
+								</div>
+							</div>
+							<div class="product-item">
+								<div class="product-item__img-box">
+									<img class="product-item__images" src="images/product/1.jpg" alt="product">
+								</div>
+								<h4 class="product-item__title">
+									Керамогранит 20*20 Havana
+									Sugar Cane
+								</h4>
+								<div class="product__info">
+									<ul class="product-info__list">
+										<li class="product-info__item">
+											<div class="product-info__title">
+												Бренд:
+											</div>
+											<div class="product-info__text">
+												CIR
+											</div>
+										</li>
+										<li class="product-info__item">
+											<div class="product-info__title">
+												Коллекция:
+											</div>
+											<div class="product-info__text">
+												Havana
+											</div>
+										</li>
+										<li class="product-info__item">
+											<div class="product-info__title">
+												Страна:
+											</div>
+											<div class="product-info__text">
+												Италия
+											</div>
+										</li>
+									</ul>
+								</div>
+								<div class="products__item-content">
+									<div class="products__item-price">
+										<div class="products__item-new" href="#">
+											4 490<span><sup>₽</sup></span>
+										</div>
+										<a class="products__item-old" href="#">
+											4 317 <span>₽/м<sup>2</sup></span>
+										</a>
+									</div>
+									<div class="products__item-images">
+										<svg class="ellipse" width="80" height="80" viewBox="0 0 80 80" fill="#888"
+											xmlns="http://www.w3.org/2000/svg">
+											<path d="M80 0C35.8172 0 0 35.8172 0 80H80V0Z" fill="#888888" />
+										</svg>
+										<svg class="basket" width="25" height="27" viewBox="0 0 25 27" fill="#888888"
+											xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M11.1152 10.2857C10.421 10.2857 9.85299 9.70714 9.85299 9V6.42857H7.32849C6.63425 6.42857 6.06624 5.85 6.06624 5.14286C6.06624 4.43571 6.63425 3.85714 7.32849 3.85714H9.85299V1.28571C9.85299 0.578571 10.421 0 11.1152 0C11.8095 0 12.3775 0.578571 12.3775 1.28571V3.85714H14.902C15.5962 3.85714 16.1642 4.43571 16.1642 5.14286C16.1642 5.85 15.5962 6.42857 14.902 6.42857H12.3775V9C12.3775 9.70714 11.8095 10.2857 11.1152 10.2857ZM17.4265 21.8571C18.815 21.8571 19.9384 23.0143 19.9384 24.4286C19.9384 25.8429 18.815 27 17.4265 27C16.038 27 14.902 25.8429 14.902 24.4286C14.902 23.0143 16.038 21.8571 17.4265 21.8571ZM4.80399 21.8571C6.19246 21.8571 7.31587 23.0143 7.31587 24.4286C7.31587 25.8429 6.19246 27 4.80399 27C3.41551 27 2.27949 25.8429 2.27949 24.4286C2.27949 23.0143 3.41551 21.8571 4.80399 21.8571ZM16.038 15.4286H6.63425C5.68756 15.4286 4.85448 14.9014 4.42531 14.1043L0.158905 6.22286C-0.181904 5.60571 0.0453014 4.82143 0.651182 4.47429C0.942671 4.31178 1.28543 4.2733 1.60467 4.36724C1.92391 4.46118 2.19372 4.67991 2.35522 4.97571L6.63425 12.8571H15.4953L20.5316 2.01857C20.6331 1.79911 20.7938 1.61362 20.995 1.48383C21.1962 1.35405 21.4295 1.28532 21.6677 1.28571H23.7377C24.432 1.28571 25 1.86429 25 2.57143C25 3.27857 24.432 3.85714 23.7377 3.85714H22.4755L17.9314 13.6157L19.6354 16.7529C20.5569 18.4757 19.3451 20.5714 17.4265 20.5714H3.54174C2.8475 20.5714 2.27949 19.9929 2.27949 19.2857C2.27949 18.5786 2.8475 18 3.54174 18H17.4265L16.038 15.4286Z"
+												fill="#888888" />
+										</svg>
+									</div>
+								</div>
+							</div>
+							<div class="product-item">
+								<div class="product-item__img-box">
+									<img class="product-item__images" src="images/product/2.jpg" alt="product">
+								</div>
+								<h4 class="product-item__title">
+									Керамогранит 20*20 Havana
+									Sugar Cane
+								</h4>
+								<div class="product__info">
+									<ul class="product-info__list">
+										<li class="product-info__item">
+											<div class="product-info__title">
+												Бренд:
+											</div>
+											<div class="product-info__text">
+												CIR
+											</div>
+										</li>
+										<li class="product-info__item">
+											<div class="product-info__title">
+												Коллекция:
+											</div>
+											<div class="product-info__text">
+												Havana
+											</div>
+										</li>
+										<li class="product-info__item">
+											<div class="product-info__title">
+												Страна:
+											</div>
+											<div class="product-info__text">
+												Италия
+											</div>
+										</li>
+									</ul>
+								</div>
+								<div class="products__item-content">
+									<div class="products__item-price">
+										<div class="products__item-new" href="#">
+											4 490<span><sup>₽</sup></span>
+										</div>
+										<a class="products__item-old" href="#">
+											4 317 <span>₽/м<sup>2</sup></span>
+										</a>
+									</div>
+									<div class="products__item-images">
+										<svg class="ellipse" width="80" height="80" viewBox="0 0 80 80" fill="#888"
+											xmlns="http://www.w3.org/2000/svg">
+											<path d="M80 0C35.8172 0 0 35.8172 0 80H80V0Z" fill="#888888" />
+										</svg>
+										<svg class="basket" width="25" height="27" viewBox="0 0 25 27" fill="#888888"
+											xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M11.1152 10.2857C10.421 10.2857 9.85299 9.70714 9.85299 9V6.42857H7.32849C6.63425 6.42857 6.06624 5.85 6.06624 5.14286C6.06624 4.43571 6.63425 3.85714 7.32849 3.85714H9.85299V1.28571C9.85299 0.578571 10.421 0 11.1152 0C11.8095 0 12.3775 0.578571 12.3775 1.28571V3.85714H14.902C15.5962 3.85714 16.1642 4.43571 16.1642 5.14286C16.1642 5.85 15.5962 6.42857 14.902 6.42857H12.3775V9C12.3775 9.70714 11.8095 10.2857 11.1152 10.2857ZM17.4265 21.8571C18.815 21.8571 19.9384 23.0143 19.9384 24.4286C19.9384 25.8429 18.815 27 17.4265 27C16.038 27 14.902 25.8429 14.902 24.4286C14.902 23.0143 16.038 21.8571 17.4265 21.8571ZM4.80399 21.8571C6.19246 21.8571 7.31587 23.0143 7.31587 24.4286C7.31587 25.8429 6.19246 27 4.80399 27C3.41551 27 2.27949 25.8429 2.27949 24.4286C2.27949 23.0143 3.41551 21.8571 4.80399 21.8571ZM16.038 15.4286H6.63425C5.68756 15.4286 4.85448 14.9014 4.42531 14.1043L0.158905 6.22286C-0.181904 5.60571 0.0453014 4.82143 0.651182 4.47429C0.942671 4.31178 1.28543 4.2733 1.60467 4.36724C1.92391 4.46118 2.19372 4.67991 2.35522 4.97571L6.63425 12.8571H15.4953L20.5316 2.01857C20.6331 1.79911 20.7938 1.61362 20.995 1.48383C21.1962 1.35405 21.4295 1.28532 21.6677 1.28571H23.7377C24.432 1.28571 25 1.86429 25 2.57143C25 3.27857 24.432 3.85714 23.7377 3.85714H22.4755L17.9314 13.6157L19.6354 16.7529C20.5569 18.4757 19.3451 20.5714 17.4265 20.5714H3.54174C2.8475 20.5714 2.27949 19.9929 2.27949 19.2857C2.27949 18.5786 2.8475 18 3.54174 18H17.4265L16.038 15.4286Z"
+												fill="#888888" />
+										</svg>
+									</div>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
-				<div class="shop-content">
-					<h1 class="shop-content__title">
-						Керамогранит
-					</h1>
-					<h3 class="shop-content__subtitle">
-						Коллекции
-					</h3>
-					<div class="shop-content__inner">
-						<div class="shop-product shop-product--agata">
-							<div class="shop-product__img-box">
-								<span></span>
-								<img class="shop-product__images" src="images/product/product1.jpg" alt="product">
-							</div>
-						</div>
-						<div class="shop-product shop-product--biarritz">
-							<div class="shop-product__img-box">
-								<span></span>
-								<img class="shop-product__images" src="images/product/product2.jpg" alt="product">
-							</div>
-						</div>
-						<div class="shop-product shop-product--bloom">
-							<div class="shop-product__img-box">
-								<span></span>
-								<img class="shop-product__images" src="images/product/product3.jpg" alt="product">
-							</div>
-						</div>
-						<div class="shop-product shop-product--biarritz">
-							<div class="shop-product__img-box">
-								<span></span>
-								<img class="shop-product__images" src="images/product/product2.jpg" alt="product">
-							</div>
-						</div>
-						<div class="shop-product shop-product--bloom">
-							<div class="shop-product__img-box">
-								<span></span>
-								<img class="shop-product__images" src="images/product/product3.jpg" alt="product">
-							</div>
-						</div>
-						<div class="shop-product shop-product--agata">
-							<div class="shop-product__img-box">
-								<span></span>
-								<img class="shop-product__images" src="images/product/product1.jpg" alt="product">
-							</div>
-						</div>
-					</div>
-					<div class="shop-product__menu">
-						<ul class="product-list">
-							<li class="product-list__item">
-								<a class="product-list__link open-next" href="#">
-									Открыть следующие 6
-								</a>
-							</li>
-							<li class="product-list__item">
-								<a class="product-list__link open" href="#">
-									Открыть все
-								</a>
-							</li>
-							<li class="product-list__item">
-								<a class="product-list__link product-list__link--active close" href="#">
-									Закрыть
-								</a>
-							</li>
-						</ul>
-					</div>
-					<h3 class="shop-content__subtitle">Товары</h3>
-					<div class="shop-content__sort">
-						<div class="shop-content__sort-links">
-							<span>Сортировать:</span>
-							<ul class="shop-content__sort-list">
-								<li><a class="shop-content__sort-list--active" href="#">Популярное</a></li>
-								<li><a href="#">Цена</a></li>
-							</ul>
-						</div>
-						<div class="shop-content__sort-links">
-							<span>Выводить по:</span>
-							<ul class="shop-content__sort-list">
-								<li><a class="shop-content__sort-list--active" href="#">18</a></li>
-								<li><a href="#">36</a></li>
-								<li><a href="#">72</a></li>
-							</ul>
-						</div>
-					</div>
+				<div class="pagination">
+					<ul class="pagination__list">
+						<li class="pagination__item">
+							<a class="pagination__link " href="#">1</a>
+						</li>
+						<li class="pagination__item">
+							<a class="pagination__link" href="#">2</a>
+						</li>
+						<li class="pagination__item">
+							<a class="pagination__link pagination__link--active" href="#">3</a>
+						</li>
+						<li class="pagination__item">
+							<span class="pagination__span" href="#">...</span>
+						</li>
+						<li class="pagination__item">
+							<a class="pagination__link" href="#">6</a>
+						</li>
+						<li class="pagination__item">
+							<a class="pagination__link" href="#">7</a>
+						</li>
+					</ul>
 				</div>
 			</div>
-		</div>
-	</section>
-
+		</section>
+	</main>
 	<script src="js/main.min.js"></script>
 </body>
 
