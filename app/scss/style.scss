@@ -605,8 +605,6 @@ a.shop-content__sort-list--active {
 		padding-left: 5px;
 	}
 }
-@import "media";
-
 .products__item-content {
 	position: relative;
 	display: flex;
@@ -726,3 +724,4 @@ a.shop-content__sort-list--active {
 .pagination__span {
 	padding: 0 10px;
 }
+@import "media";
