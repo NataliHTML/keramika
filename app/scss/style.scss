@@ -80,7 +80,7 @@
 			height: 80px;
 			width: 80px;
 			border-radius: 50%;
-			background-color: #3F3F3F;
+			background-color: #3f3f3f;
 		}
 	}
 	&__list-link--active {
@@ -88,7 +88,7 @@
 		height: 80px;
 		width: 80px;
 		border-radius: 50%;
-		background-color: #3F3F3F;
+		background-color: #3f3f3f;
 	}
 }
 
@@ -137,7 +137,7 @@
 		height: 43px;
 		width: 43px;
 		border-radius: 50%;
-		border: 1px solid #3F3F3F;
+		border: 1px solid #3f3f3f;
 		text-align: center;
 		left: 0;
 		top: 0;
@@ -161,7 +161,7 @@
 	width: 38px;
 	height: 38px;
 	border-radius: 50%;
-	background-color: #3F3F3F;
+	background-color: #3f3f3f;
 	position: relative;
 	&::before {
 		content: "";
@@ -343,9 +343,9 @@ input#country:checked ~ .filter__label {
 		font-size: 14px;
 		line-height: 13px;
 		padding: 16px 26px;
-		background: #3F3F3F;
+		background: #3f3f3f;
 		border-radius: 22px;
-		color: #FFFFFF;
+		color: #ffffff;
 	}
 }
 
@@ -356,7 +356,7 @@ input#country:checked ~ .filter__label {
 		font-family: "Playfair Display", serif;
 		font-size: 56px;
 		line-height: 75px;
-		color: #3F3F3F;
+		color: #3f3f3f;
 		margin-top: -10px;
 	}
 	&__subtitle {
@@ -364,7 +364,7 @@ input#country:checked ~ .filter__label {
 		font-style: italic;
 		font-size: 22px;
 		line-height: 29px;
-		color: #3F3F3F;
+		color: #3f3f3f;
 		margin-bottom: 15px;
 	}
 	&__inner {
@@ -444,7 +444,7 @@ a.shop-content__sort-list--active {
 			font-size: 36px;
 			line-height: 34px;
 			text-transform: uppercase;
-			color: #FFFFFF;
+			color: #ffffff;
 			padding: 125px 80px;
 			z-index: 6;
 		}
@@ -456,7 +456,7 @@ a.shop-content__sort-list--active {
 			font-size: 36px;
 			line-height: 34px;
 			text-transform: uppercase;
-			color: #FFFFFF;
+			color: #ffffff;
 			padding: 125px 125px;
 			z-index: 6;
 		}
@@ -468,7 +468,7 @@ a.shop-content__sort-list--active {
 			font-size: 36px;
 			line-height: 34px;
 			text-transform: uppercase;
-			color: #FFFFFF;
+			color: #ffffff;
 			padding: 125px 117px;
 			z-index: 6;
 		}
@@ -644,7 +644,7 @@ a.shop-content__sort-list--active {
 	font-size: 36px;
 	line-height: 34px;
 	font-weight: 900;
-	color: #3F3F3F;
+	color: #3f3f3f;
 	margin-bottom: 10px;
 	span {
 		font-family: "Roboto", sans-serif;
@@ -689,6 +689,9 @@ a.shop-content__sort-list--active {
 	top: 30px;
 	right: 15px;
 }
+.pagination {
+	margin-bottom: 180px;
+}
 .pagination__list {
 	text-align: center;
 	margin-left: 325px;
@@ -707,11 +710,15 @@ a.shop-content__sort-list--active {
 		align-items: center;
 		background-color: #fff;
 		font-size: 14px;
-		border: 1px solid #3F3F3F;
+		border: 1px solid #3f3f3f;
 		line-height: 13px;
 		color: #111111;
 		&.active {
-			background-color: #3F3F3F;
+			background-color: #3f3f3f;
+			color: #fff;
+		}
+		&:hover {
+			background-color: #3f3f3f;
 			color: #fff;
 		}
 	}
