@@ -5,3 +5,18 @@
 	src: url(../fonts/GothamPro.woff)format("woff"), url(../fonts/GothamPro.woff2)format("woff2");
 	font-display: swap;
 }
+@font-face {
+	font-family: "GothamPro";
+	font-weight: 300;
+	font-style: italic;
+	src: url(../fonts/GothamPro-LightItalic.woff)format("woff"), url(../fonts/GothamPro-LightItalic.woff2)format("woff2");
+	font-display: swap;
+}
+@font-face {
+	font-family: "GothamPro";
+	font-weight: 500;
+	font-style: italic;
+	src: url(../fonts/GothamPro-MediumItalic.woff)format("woff"),
+		url(../fonts/GothamPro-MediumItalic.woff)format("woff2");
+	font-display: swap;
+}

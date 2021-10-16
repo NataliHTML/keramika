@@ -6,6 +6,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>МиоКерамика</title>
+	<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -62,20 +63,10 @@
 						</div>
 						<div class="header__circle-items">
 							<div class="basket__box">
-								<a class="basket header__circle active icon-shopping-cart" href="#"><span>1</span></a>
-								<div class="circle__menu">
-									<div class="circle__item">
-										<img class="circle__images" src="images/content/basket.png" alt="">
-									</div>
-								</div>
+								<a class="basket header__circle" href="#"><span>1</span></a>
 							</div>
 							<div class="heart__box">
-								<a class="heart header__circle active icon-shopping-cart" href="#"><span>1</span></a>
-								<div class="circle__menu">
-									<div class="circle__item">
-										<img class="circle__images" src="images/content/heart.png" alt="">
-									</div>
-								</div>
+								<a class="heart header__circle" href="#"><span>1</span></a>
 							</div>
 						</div>
 					</div>
@@ -83,6 +74,266 @@
 			</div>
 		</div>
 	</header>
+	<div class="breadcrumbs">
+		<div class="container">
+			<div class="breadcrumbs__inner">
+				<ul class="breadcrumbs__list">
+					<li><a href="#">Главная</a></li>
+					<li><a href="#">Каталог</a></li>
+					<li><a href="#">Керамогранит</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<section class="shop">
+		<div class="container">
+			<div class="shop__inner">
+				<div class="shop__filters">
+					<div class="shop__filter-selects">
+						<form class="filter__form" action="#">
+							<input class="filter__input" type="checkbox" name="appointment" id="appointment" checked>
+							<label class="filter__menu" for="appointment"><span>Назначение</span><span
+									class="filter-appointment__checkbox"></span></label>
+							<label class="filter__label">
+								<span class="filter__text">Плитка для кухни</span>
+								<div class="filter__box">
+									<input class="filter__input" type="radio" name="appointment" checked>
+									<span class="filter__checkbox"></span>
+								</div>
+							</label>
+							<label class="filter__label">
+								<span class="filter__text">Плитка для ванной</span>
+								<div class="filter__box">
+									<input class="filter__input" type="radio" name="appointment">
+									<span class="filter__checkbox"></span>
+								</div>
+							</label>
+							<label class="filter__label">
+								<span class="filter__text">Керамогранит</span>
+								<div class="filter__box">
+									<input class="filter__input" type="radio" name="appointment">
+									<span class="filter__checkbox"></span>
+								</div>
+							</label>
+							<label class="filter__label">
+								<span class="filter__text">Напольная плитка</span>
+								<div class="filter__box">
+									<input class="filter__input" type="radio" name="appointment">
+									<span class="filter__checkbox"></span>
+								</div>
+							</label>
+						</form>
+
+						<form class="filter__form" action="#">
+							<input class="filter__input" type="checkbox" name="brand" id="brand">
+							<label class="filter__menu" for="brand"><span>Производитель (бренд)</span><span
+									class="filter-appointment__checkbox"></span></label>
+							<label class="filter__label">
+								<span class="filter__text">Плитка для кухни</span>
+								<div class="filter__box">
+									<input class="filter__input" type="radio" name="brand">
+									<span class="filter__checkbox"></span>
+								</div>
+							</label>
+							<label class="filter__label">
+								<span class="filter__text">Плитка для ванной</span>
+								<div class="filter__box">
+									<input class="filter__input" type="radio" name="brand">
+									<span class="filter__checkbox"></span>
+								</div>
+							</label>
+							<label class="filter__label">
+								<span class="filter__text">Керамогранит</span>
+								<div class="filter__box">
+									<input class="filter__input" type="radio" name="brand">
+									<span class="filter__checkbox"></span>
+								</div>
+							</label>
+							<label class="filter__label">
+								<span class="filter__text">Напольная плитка</span>
+								<div class="filter__box">
+									<input class="filter__input" type="radio" name="brand">
+									<span class="filter__checkbox"></span>
+								</div>
+							</label>
+						</form>
+						<form class="filter__form" action="#">
+							<input class="filter__input" type="checkbox" name="collection" id="collection">
+							<label class="filter__menu" for="collection"><span>Коллекция</span><span
+									class="filter-appointment__checkbox"></span></label>
+							<label class="filter__label">
+								<span class="filter__text">Плитка для кухни</span>
+								<div class="filter__box">
+									<input class="filter__input" type="radio" name="collection">
+									<span class="filter__checkbox"></span>
+								</div>
+							</label>
+							<label class="filter__label">
+								<span class="filter__text">Плитка для ванной</span>
+								<div class="filter__box">
+									<input class="filter__input" type="radio" name="collection">
+									<span class="filter__checkbox"></span>
+								</div>
+							</label>
+							<label class="filter__label">
+								<span class="filter__text">Керамогранит</span>
+								<div class="filter__box">
+									<input class="filter__input" type="radio" name="collection">
+									<span class="filter__checkbox"></span>
+								</div>
+							</label>
+							<label class="filter__label">
+								<span class="filter__text">Напольная плитка</span>
+								<div class="filter__box">
+									<input class="filter__input" type="radio" name="collection">
+									<span class="filter__checkbox"></span>
+								</div>
+							</label>
+						</form>
+						<form class="filter__form" action="#">
+							<input class="filter__input" type="checkbox" name="country" id="country">
+							<label class="filter__menu" for="country"><span>Страна</span><span
+									class="filter-appointment__checkbox"></span></label>
+							<label class="filter__label">
+								<span class="filter__text">Плитка для кухни</span>
+								<div class="filter__box">
+									<input class="filter__input" type="radio" name="country">
+									<span class="filter__checkbox"></span>
+								</div>
+							</label>
+							<label class="filter__label">
+								<span class="filter__text">Плитка для ванной</span>
+								<div class="filter__box">
+									<input class="filter__input" type="radio" name="country">
+									<span class="filter__checkbox"></span>
+								</div>
+							</label>
+							<label class="filter__label">
+								<span class="filter__text">Керамогранит</span>
+								<div class="filter__box">
+									<input class="filter__input" type="radio" name="country">
+									<span class="filter__checkbox"></span>
+								</div>
+							</label>
+							<label class="filter__label">
+								<span class="filter__text">Напольная плитка</span>
+								<div class="filter__box">
+									<input class="filter__input" type="radio" name="country">
+									<span class="filter__checkbox"></span>
+								</div>
+							</label>
+						</form>
+						<div class="filter-btn">
+							<form class="filter-btn__form" action="#">
+								<span class="filter__menu">Фильтр</span>
+								<label class="filter__button">
+									<img src="images/icon/reset.svg" alt="search images">
+									<button class="filter-btn__btn" type="reset">
+										сброс
+									</button>
+								</label>
+							</form>
+							<div class="filter-choice">
+								<ul class="filter-choice__list">
+									<li class="filter-choice__item">
+										<div class="filter-choice__title">
+											Выбрано: 6
+										</div>
+									</li>
+									<li class="filter-choice__item">
+										<a class="filter-choice__btn" href="#">Показать</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="shop-content">
+					<h1 class="shop-content__title">
+						Керамогранит
+					</h1>
+					<h3 class="shop-content__subtitle">
+						Коллекции
+					</h3>
+					<div class="shop-content__inner">
+						<div class="shop-product shop-product--agata">
+							<div class="shop-product__img-box">
+								<span></span>
+								<img class="shop-product__images" src="images/product/product1.jpg" alt="product">
+							</div>
+						</div>
+						<div class="shop-product shop-product--biarritz">
+							<div class="shop-product__img-box">
+								<span></span>
+								<img class="shop-product__images" src="images/product/product2.jpg" alt="product">
+							</div>
+						</div>
+						<div class="shop-product shop-product--bloom">
+							<div class="shop-product__img-box">
+								<span></span>
+								<img class="shop-product__images" src="images/product/product3.jpg" alt="product">
+							</div>
+						</div>
+						<div class="shop-product shop-product--biarritz">
+							<div class="shop-product__img-box">
+								<span></span>
+								<img class="shop-product__images" src="images/product/product2.jpg" alt="product">
+							</div>
+						</div>
+						<div class="shop-product shop-product--bloom">
+							<div class="shop-product__img-box">
+								<span></span>
+								<img class="shop-product__images" src="images/product/product3.jpg" alt="product">
+							</div>
+						</div>
+						<div class="shop-product shop-product--agata">
+							<div class="shop-product__img-box">
+								<span></span>
+								<img class="shop-product__images" src="images/product/product1.jpg" alt="product">
+							</div>
+						</div>
+					</div>
+					<div class="shop-product__menu">
+						<ul class="product-list">
+							<li class="product-list__item">
+								<a class="product-list__link open-next" href="#">
+									Открыть следующие 6
+								</a>
+							</li>
+							<li class="product-list__item">
+								<a class="product-list__link open" href="#">
+									Открыть все
+								</a>
+							</li>
+							<li class="product-list__item">
+								<a class="product-list__link product-list__link--active close" href="#">
+									Закрыть
+								</a>
+							</li>
+						</ul>
+					</div>
+					<h3 class="shop-content__subtitle">Товары</h3>
+					<div class="shop-content__sort">
+						<div class="shop-content__sort-links">
+							<span>Сортировать:</span>
+							<ul class="shop-content__sort-list">
+								<li><a class="shop-content__sort-list--active" href="#">Популярное</a></li>
+								<li><a href="#">Цена</a></li>
+							</ul>
+						</div>
+						<div class="shop-content__sort-links">
+							<span>Выводить по:</span>
+							<ul class="shop-content__sort-list">
+								<li><a class="shop-content__sort-list--active" href="#">18</a></li>
+								<li><a href="#">36</a></li>
+								<li><a href="#">72</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
 
 	<script src="js/main.min.js"></script>
 </body>

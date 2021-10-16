@@ -2,3 +2,21 @@
 	font-family: "GothamPro", sans-serif;
 	font-weight: 400;
 }
+%gotham-500 {
+	font-family: "Gotham Pro MediumItalic";
+	font-weight: 500;
+	font-style: italic;
+}
+%gotham-300 {
+	font-family: "Gotham Pro LightItalic";
+	font-weight: 300;
+	font-style: italic;
+}
+%checkbox-hidden,
+%radio-hidden {
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+	clip: rect(0 0 0 0);
+	position: absolute;
+}
